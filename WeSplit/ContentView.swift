@@ -47,6 +47,7 @@ struct ContentView: View {
                         }
                     }).pickerStyle(SegmentedPickerStyle())
                     Text("Your tip amount will be: $\(tipAmount, specifier: "%.2f")")
+                        .foregroundColor(tipAmount > 0 ? .black : .red)
                 }
                 
                 Section {
